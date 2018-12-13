@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+}
+
+header{
+    background-color: #24272E;
+    padding: 20px;
+}
+
+header > h1 {
+    color: whitesmoke;
+    text-align: center;
+}
