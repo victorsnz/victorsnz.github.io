@@ -1,19 +1,388 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&effect=anaglyph');
+
+*, *:after, *:before {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+*{
+    margin:0;padding:0;border:0 none;position: relative; outline: none;
 }
 
-body {
-    background: white;
-}
-
-header{
-    background-color: #24272E;
-    padding: 20px;
+body, header {
+    background: whitesmoke;
 }
 
 header > h1 {
-    color: whitesmoke;
+    padding: 40px;
+    color: #24272E;
+    font-family: 'Press Start 2P';
     text-align: center;
+
+}
+a { text-decoration: none;}
+
+h3 {
+    padding: 5px;
+    color: #24272E;
+    font-family: 'Press Start 2P';
+    text-align: center;
+    display: none;
+}
+.avatar{
+    /* margin-top: 18px !important;
+    margin-left: 30% !important; */
+    width: 75px;
+    position: fixed;
+    z-index: 9;
+    cursor: pointer;
+    /* cursor: move; */
+}
+#container-floating{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 35px;
+    left: 0;
+    z-index: 50px;
+  }
+  
+  /* #container-floating:hover{
+    height: 400px;
+    width: 90px;
+    padding: 30px;
+  } */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #24272E;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+    box-shadow: 2px 2px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav-bar{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px 0;
+    background: whitesmoke;
+    box-shadow: 0 0.2px 0 0 #24272E; 
+}
+
+.nav-bar ul{
+    max-width: 100%;
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.nav-bar li{
+    width: 24%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    color: #24272E;
+}
+
+.nav-bar li a{
+    padding: 15px 20px;
+    font-size: 30px;
+    color: #24272E;
+    display: inline-block;
+    outline:0;
+    /*font-weight: 100;*/
+}
+
+.nav-bar li> a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #24272E;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+  }
+  .nav-bar li> a:hover:before,
+  .nav-bar li> a:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  .nav-bar li ul.dropdown{
+    position: absolute;
+    display: none;
+    width: 100px;
+    background: whitesmoke;
+    z-index:99;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-bar li:hover > ul.dropdown {
+      display: block;
+      position: absolute;
+      top:100%;
+      left: 35%;
+    }
+  
+  .nav-bar li ul.dropdown li{
+    float: left;
+    width:100%;
+    margin:2% 0%;
+}
+.nav-bar li ul.dropdown li a:hover{
+    width: 100%;
+}
+
+
+.elements{
+    display: contents;
+    width: 100%;
+}
+/**/
+.img-responsive{
+    width: 100%;
+}
+
+.hovereffect {
+    width: 33%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+.hovereffect .overlay { /* aca esta el despelote*/
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+	top: auto;
+	bottom: 0;
+	padding: 1em;
+	height: 4.75em;
+	background: rgb(6, 77, 241);
+	color: #fff;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+	visibility: hidden;
+
+}
+
+.hovereffect img {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+.hovereffect:hover img {
+-webkit-transform: translate3d(0,-10%,0);
+	transform: translate3d(0,-10%,0);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+	margin: 0px;
+	display: inline-block;
+}
+
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+	color: #fff;
+	border: 1px solid #fff;
+	margin: 50px 0 0 0;
+	background-color: transparent;
+}
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+
+.hovereffect p.icon-links a {
+	float: right;
+	color: #3c4a50;
+	font-size: 1.4em;
+}
+
+.hovereffect:hover p.icon-links a:hover,
+.hovereffect:hover p.icon-links a:focus {
+	color: #252d31;
+}
+
+.hovereffect h2,
+.hovereffect p.icon-links a {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+	visibility: visible;
+}
+
+.hovereffect p.icon-links a span:before {
+	display: inline-block;
+	padding: 8px 10px;
+	/*speak: none;*/
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.hovereffect:hover .overlay,
+.hovereffect:hover h2,
+.hovereffect:hover p.icon-links a {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover h2 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.hovereffect:hover p.icon-links a:nth-child(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.hovereffect:hover p.icon-links a:nth-child(2) {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+.hovereffect:hover p.icon-links a:first-child {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+@media only screen and (max-width:900px){
+    header > h1 {
+        padding: 15px;
+        color: #24272E;
+        font-family: 'Press Start 2P';
+        font-size: 22px; 
+        text-align: center;
+        transition: left 0.35 ease;
+    }
+    .nav-mobile{
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 50px;
+        margin: 5px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: none;
+        padding: 120x 0 0 10px;
+        z-index:99;
+        /* transition: left 0.35 ease; */
+     }
+     
+    .nav-bar{
+       background: whitesmoke;
+       width: 85px;
+       height: 85%;
+       display: block;
+       position:  fixed;
+       left: -200px;
+       z-index:99;
+   }
+   .nav-bar.visible{
+       left: 0px;
+       transition: left 0.35 ease;
+       box-shadow: 0.2px 0.2px 0.2px 0.2px #24272E; 
+   }
+   
+    .menu-icon{
+        cursor: pointer;
+    }
+    .menu-icon span{
+        height: 2px;
+        background: #24272E;
+        margin: 5px;
+        display: block;
+        width: 20px;
+    }
+    .nav-bar ul {
+        margin-top: 50px;
+        display: grid;
+        height: 90%;
+    }
+    .nav-bar li a{
+        display: block;
+        color: #24272E;
+        font-weight: 600;
+    }
+    .nav-bar li:first-child:hover a {border-radius: 0; }
+        .nav-bar li ul.dropdown {position: absolute;}
+        .nav-bar li ul.dropdown li a{
+            background: #fff !important;
+            border: 2px;
+            color: #252d31 !important;
+            position: absolute;
+            padding: 10px 10px 10px 30px;
+            float: inherit; 
+        }
+        .nav-bar li:hover .arrow-down {
+            border-top: 5px solid #24272E;
+            position: absolute;
+            top: absolute;
+            right: 20px;
+        }
+
+   .elements{width: 100%;}
+   .hovereffect{
+       width: 300px;
+       display: block;
+   }
 }

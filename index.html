@@ -2,11 +2,101 @@
 <html>
     <head>
         <title>Victor's Page</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <meta name="viewport" content="width = device-width, user-scalable = no, initial-scale = 1.0, minimum-scale = 1.0">
     </head>
-<body>
     <header>
-        <h1>Hola Mundo!</h1>
+        <h1 class="font-effect-anaglyph">¡HOLA MUNDO!</h1>    
     </header>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <ul> 
+                <li><a href="#"><i class="fa fa-home"></i></a></li>
+                <li><a href="https://github.com/victorsnz" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/victorsanchez89" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa fa-user-circle"></i><span class="arrow-down"></span></a>
+                    <ul class="dropdown">
+                        <li><a href="https://www.facebook.com/VictorAdolfoSanchez" target="_blank"><i class="fa fa-facebook"></i></a></li>                       
+                        <li><a href="https://www.instagram.com/victorsnz" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/Depecher" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-mobile">
+            <h3 class="font-effect-anaglyph">¡HOLA MUNDO!</h3>
+            <div class="menu-icon"><span></span> <span></span> <span></span> </div>
+            
+        </div>
+        <br><br>
+        <div class="elements">
+            <div class="hovereffect">
+                <a href="https://victorsnz.github.io/ResponsiveWebExample">
+                    <img class="img-responsive" src="./img/responsive-450x300.png" alt="pagina con bootstrap">
+                </a>
+                <div class="overlay" >     
+                    <h2>Página de ejemplo</h2>    
+                </div>
+            </div>
+            <div class="hovereffect">
+                <a href="https://victorsnz.github.io/rock-paper-scissor">
+                    <img class="img-responsive" src="./img/RPS-450x300.png" alt="piedra papel tijeras">
+                </a>
+                <div class="overlay" >     
+                    <h2>Piedra Papel Tijeras</h2>    
+                </div>
+            </div>
+            <div class="hovereffect">
+                <a href="">
+                <img class="img-responsive" src="http://placehold.it/450x300
+                " alt="">
+                </a>
+                <div class="overlay" >     
+                    <h2>Página de ejemplo</h2>    
+                </div>
+            </div>
+            <div class="hovereffect">
+                <a href="">
+                <img class="img-responsive" src="http://placehold.it/450x300
+                " alt="">
+                </a>
+                <div class="overlay" >     
+                    <h2>Página de ejemplo</h2>    
+                </div>
+            </div>
+            <div class="hovereffect">
+                <a href="">
+                <img class="img-responsive" src="http://placehold.it/450x300
+                " alt="">
+                </a>
+                <div class="overlay" >     
+                    <h2>Página de ejemplo</h2>    
+                </div>
+            </div>
+            <div class="hovereffect">
+                <a href="">
+                <img class="img-responsive" src="http://placehold.it/450x300
+                " alt="">
+                </a>
+                <div class="overlay" >     
+                    <h2>Página de ejemplo</h2>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-floating">
+        <div class="tooltip" style="margin-left: 30%">
+            <img class="avatar" src="./img/avatar.png" alt="Vic" style ="margin-top: 18px">
+            <span class="tooltiptext" style="margin-left: 70px" >Esta página sigue en construcción (Hay muchas cosas rotas)</span>
+        </div>
+    </div>
 </body>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+    $('.menu-icon').click(function(){
+        $('.nav-bar').toggleClass('visible');
+    });
+</script>
