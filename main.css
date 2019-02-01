@@ -1,5 +1,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&effect=anaglyph');
+/* @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&effect=anaglyph'); */
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono|VT323');
 
 *, *:after, *:before {
     box-sizing: border-box;
@@ -23,6 +24,19 @@ header > h1 {
 }
 a { text-decoration: none;}
 
+.texto{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 25%;
+    font-family: 'Oxygen Mono';
+    padding-right: 30%; 
+    z-index: 99;
+
+}
+#background{
+    z-index: 0;
+    width: 100%;
+}
 h3 {
     padding: 5px;
     color: #24272E;
@@ -65,6 +79,7 @@ h3 {
     background-color: white;
     color: #24272E;
     text-align: center;
+    font-family: VT323;
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
@@ -303,6 +318,9 @@ h3 {
 	-webkit-transition-delay: 0.2s;
 	transition-delay: 0.2s;
 }
+/****************************************************/
+/*    MOBILE   */
+/****************************************************/
 
 @media only screen and (max-width:900px){
     header > h1 {
@@ -313,8 +331,12 @@ h3 {
         text-align: center;
         transition: left 0.35 ease;
     }
+    .texto{
+        margin-top: 150px;
+        margin-left: 10%;    
+    }
     .nav-mobile{
-        display: inline-block;
+        /* display: inline-block; */
         vertical-align: middle;
         width: 100%;
         height: 50px;
@@ -339,8 +361,10 @@ h3 {
    }
    .nav-bar.visible{
        left: 0px;
+       width: 70%;
+       height: 65px;
        transition: left 0.35 ease;
-       box-shadow: 0.2px 0.2px 0.2px 0.2px #24272E; 
+       box-shadow: 0.1px 0.1px 0.1px 0.1px #24272E; 
    }
    
     .menu-icon{
@@ -354,9 +378,10 @@ h3 {
         width: 20px;
     }
     .nav-bar ul {
-        margin-top: 50px;
-        display: grid;
-        height: 90%;
+        margin-top: 0px;
+        margin-left: 20px;
+        /* display: inline-block; */
+        height: 10%;
     }
     .nav-bar li a{
         display: block;
@@ -384,5 +409,13 @@ h3 {
    .hovereffect{
        width: 300px;
        display: block;
+   }
+   @media only screen and (max-width:650px){
+    .texto{
+        margin-top: 20%;
+        font-size: 15px;
+        margin-left: 10%;
+        padding-bottom: 50%;    
+    }
    }
 }
