@@ -1,5 +1,4 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-/* @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&effect=anaglyph'); */
 @import url('https://fonts.googleapis.com/css?family=Oxygen+Mono|VT323');
 
 *, *:after, *:before {
@@ -26,8 +25,9 @@ a { text-decoration: none;}
 
 .texto{
     position: absolute;
-    margin-top: 150px;
-    margin-left: 25%;
+    margin-top: 250px;
+    margin-left: 20%;
+    font-size: 40px;
     font-family: 'Oxygen Mono';
     padding-right: 30%; 
     z-index: 99;
@@ -45,28 +45,19 @@ h3 {
     display: none;
 }
 .avatar{
-    /* margin-top: 18px !important;
-    margin-left: 30% !important; */
     width: 75px;
     position: fixed;
     z-index: 9;
     cursor: pointer;
-    /* cursor: move; */
 }
 #container-floating{
     position: fixed;
     width: 70px;
     height: 70px;
     bottom: 35px;
-    left: 0;
+    left: -30px;
     z-index: 50px;
   }
-  
-  /* #container-floating:hover{
-    height: 400px;
-    width: 90px;
-    padding: 30px;
-  } */
 
 .tooltip {
     position: relative;
@@ -121,8 +112,6 @@ h3 {
 .nav-bar ul{
     max-width: 100%;
     list-style-type: none;
-    /* margin: 0;
-    padding: 0; */
 }
 
 .nav-bar li{
@@ -141,7 +130,6 @@ h3 {
     color: #24272E;
     display: inline-block;
     outline:0;
-    /*font-weight: 100;*/
 }
 
 .nav-bar li> a:before {
@@ -188,26 +176,48 @@ h3 {
     width: 100%;
 }
 
+/*columns and row*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 0; */
+  }
+  .column {
+    flex: 33%;
+    max-width: 33%;
+    height: auto;
+    padding: 0px 0px;
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1000px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
-.elements{
-    display: contents;
-    width: 100%;
-}
-/**/
 .img-responsive{
     width: 100%;
 }
 
 .hovereffect {
-    width: 33%;
-    height: auto;
+    width: 100%; /*33*/
+    height: 100%;/*auto*/
     float: left;
     overflow: hidden;
     position: relative;
     text-align: center;
     cursor: default;
 }
-.hovereffect .overlay { /* aca esta el despelote*/
+.hovereffect .overlay {
     width: 100%;
     position: absolute;
     overflow: hidden;
@@ -215,18 +225,20 @@ h3 {
 	top: auto;
 	bottom: 0;
 	padding: 1em;
-	height: 4.75em;
-	background: rgb(6, 77, 241);
+	height: 2.75em;
+	background: #3c4a50;
 	color: #fff;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
-	visibility: hidden;
+	visibility: visible;
 
 }
 
 .hovereffect img {
+    display: block;
+    position: relative;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
@@ -234,18 +246,6 @@ h3 {
 .hovereffect:hover img {
 -webkit-transform: translate3d(0,-10%,0);
 	transform: translate3d(0,-10%,0);
-}
-
-.hovereffect h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.6);
-	margin: 0px;
-	display: inline-block;
 }
 
 .hovereffect a.info {
@@ -264,17 +264,14 @@ h3 {
 
 
 .hovereffect p.icon-links a {
-	float: right;
-	color: #3c4a50;
-	font-size: 1.4em;
+	float: left;
+    text-decoration: none;
+    text-align: left;
+    text-size-adjust: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #fff;
 }
 
-.hovereffect:hover p.icon-links a:hover,
-.hovereffect:hover p.icon-links a:focus {
-	color: #252d31;
-}
-
-.hovereffect h2,
 .hovereffect p.icon-links a {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
@@ -286,22 +283,15 @@ h3 {
 .hovereffect p.icon-links a span:before {
 	display: inline-block;
 	padding: 8px 10px;
-	/*speak: none;*/
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 
 .hovereffect:hover .overlay,
-.hovereffect:hover h2,
 .hovereffect:hover p.icon-links a {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-}
-
-.hovereffect:hover h2 {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
 }
 
 .hovereffect:hover p.icon-links a:nth-child(3) {
@@ -323,20 +313,12 @@ h3 {
 /****************************************************/
 
 @media only screen and (max-width:900px){
-    header > h1 {
-        padding: 15px;
-        color: #24272E;
-        font-family: 'Press Start 2P';
-        font-size: 22px; 
-        text-align: center;
-        transition: left 0.35 ease;
-    }
+
     .texto{
         margin-top: 150px;
         margin-left: 10%;    
     }
     .nav-mobile{
-        /* display: inline-block; */
         vertical-align: middle;
         width: 100%;
         height: 50px;
@@ -380,7 +362,6 @@ h3 {
     .nav-bar ul {
         margin-top: 0px;
         margin-left: 20px;
-        /* display: inline-block; */
         height: 10%;
     }
     .nav-bar li a{
@@ -405,12 +386,11 @@ h3 {
             right: 20px;
         }
 
-   .elements{width: 100%;}
    .hovereffect{
        width: 300px;
        display: block;
    }
-   @media only screen and (max-width:650px){
+   @media only screen and (max-width:700px){
     .texto{
         margin-top: 20%;
         font-size: 15px;
