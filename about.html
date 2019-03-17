@@ -2,16 +2,52 @@
 <html>
     <head>
         <title>About me</title>
-            <link rel="stylesheet" href="main.css" type="text/css">
-            <meta name="viewport" content="width = device-width, user-scalable = no, initial-scale = 1.0, minimum-scale = 1.0">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./img/favicon/site.webmanifest">
+        
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <meta name="viewport" content="width = device-width, user-scalable = no, initial-scale = 1.0, minimum-scale = 1.0">
     </head>
     <body>
-        <img src="" alt="image of the creator of this web page">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptate rem, tempore quam soluta sed et architecto, repellat quia accusantium harum esse facere voluptatum. Laudantium eveniet mollitia ad repellat amet.</p>    
         <div class="container">
-                <a href="https://www.facebook.com/VictorAdolfoSanchez" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/victorsnz" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <a href="https://twitter.com/Depecher" target="_blank"><i class="fa fa-twitter"></i></a>
+                <div class="nav-bar">
+                        <ul> 
+                            <li><a href="#"><i class="fa fa-home"></i></a></li>
+                            <li><a href="https://github.com/victorsnz" target="_blank"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/victorsanchez89" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="about.html" target="_self"><i class="fa fa-user-circle"></i><span class="arrow-down"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-mobile">
+                        <div class="menu-icon"><span></span> <span></span> <span></span> 
+                        </div>
+                    </div>
+        </div>
+        <h2 id="about-title">Un poco sobre mí</h2>
+        <div id="about-container">
+            <div id="profile-container">
+                <img id="profile-img" src="img/profile.png" alt="image of the creator of this web page">
+            </div>
+            <div id="text-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius feugiat dui, id congue leo lacinia vel. In hac habitasse platea dictumst. Vivamus mauris nisi, aliquam at sodales in, auctor ultrices tortor. Duis id euismod lorem. Fusce pretium urna in nibh efficitur, sit amet luctus odio eleifend. Vivamus tempor est tortor, non auctor erat tempus eget. Suspendisse eu lectus eleifend, gravida metus nec, convallis mauris. Nam porttitor porta neque. Ut ligula nunc, feugiat elementum ultrices sed, consequat vel ante. Integer at felis et risus blandit vehicula. Donec tempus quam at orci dictum faucibus. Morbi porta dapibus vulputate.</p>
+                <p>Donec consectetur purus tortor, quis ultricies sem vestibulum eget. Fusce volutpat enim a lorem dictum convallis. Pellentesque sagittis massa tortor, ac ultricies lacus ultricies eget. Maecenas et elit accumsan, imperdiet lacus vitae, placerat nisl. Ut maximus lectus justo. Nulla eu ex eget risus viverra tincidunt. Donec eu malesuada neque. Curabitur nisl risus, fermentum in tincidunt sit amet, dictum ut velit. Etiam nec ultricies lorem, a dictum magna. </p>
+            </div>        
+        </div>
+        <h2 id="social-title">Estas son mis redes sociales</h2>
+        <div id="social-container">
+                <a href="https://www.facebook.com/VictorAdolfoSanchez" target="_blank">
+                    <img class="profile-social" src="img/about/profile-facebook.png" alt="cartoon face & facebook logo">
+                </a>
+                <a href="https://www.instagram.com/victorsnz" target="_blank">
+                    <img class="profile-social" src="img/about/profile-instagram.png" alt="cartoon face & instagram logo">
+                </a>
+                <a href="https://twitter.com/Depecher" target="_blank">
+                    <img class="profile-social" src="img/about/profile-twitter.png" alt="cartoon face & twitter logo">
+                </a>
         </div>
     </body>
 </html>

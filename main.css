@@ -1,5 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono|VT323');
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono|VT323|Raleway');
 
 *, *:after, *:before {
     box-sizing: border-box;
@@ -398,4 +398,58 @@ h3 {
         padding-bottom: 50%;    
     }
    }
+}
+
+/* about me page */
+#about-title{
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Oxygen Mono';
+}
+#about-container{
+    max-width: 100%; 
+    display: flex;
+}
+#profile-container{
+    flex: 20%;
+    width: 20%;
+    margin-top:2%; 
+}
+#profile-img{
+    position: relative;
+    margin: 10%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+#text-container{
+    position: relative;
+    margin-top: 2%;
+    margin-right: 5%;
+    flex: 80%;
+    width: 80%;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#social-title{
+    margin-top:2%;
+    text-align: center;
+    font-family: 'Oxygen Mono';
+}
+#social-container{
+    text-align: center;
+    width: 100%;
+}
+.profile-social{
+    width: 100px;
+    position: relative;
+    margin: 2%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
 }
