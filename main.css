@@ -47,7 +47,7 @@ h3 {
 .avatar{
     width: 75px;
     position: fixed;
-    z-index: 9;
+    z-index: 1000;
     cursor: pointer;
 }
 #container-floating{
@@ -400,6 +400,40 @@ h3 {
    }
 }
 
+.footer {
+    display: flex; 
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #24272E;
+  }
+  #footer-legend{
+      margin-top: 2%;
+      margin-left: 20%;
+      margin-bottom: 2%;
+      flex: 100%;
+      width: 70%;
+      text-align: center;
+      color: gainsboro;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #footer-social{
+    flex: 30%;
+    margin-top: 1%;  
+  }
+  #footer-social a i{
+    width: 25%;   
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin: 2%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
 /* about me page */
 #about-title{
     margin-top: 2%;
@@ -444,8 +478,11 @@ h3 {
     text-align: center;
     width: 100%;
 }
-.profile-social{
-    width: 100px;
+
+#social-container a i{
+    width: 100px;   
+    font-size: 30px;
+    color: #24272E;
     position: relative;
     margin: 2%;
     background-repeat: no-repeat;
