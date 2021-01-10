@@ -1,153 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Victor's Web Page</title>
+        <title>GitHub Portfolio</title>
         <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
         <link rel="manifest" href="./img/favicon/site.webmanifest">
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="main.css" type="text/css">
         <meta name="viewport" content="width = device-width, user-scalable = no, initial-scale = 1.0, minimum-scale = 1.0">
     </head>
-<body>
-    <div class="container">
-        <div class="nav-bar">
-            <ul> 
-                <li><a href="#"><i class="fa fa-home"></i></a></li>
-                <li><a href="https://github.com/victorsnz" target="_blank"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/victorsanchez89" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="about.html" target="_self"><i class="fa fa-user-circle"></i><span class="arrow-down"></span></a>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-mobile">
-            <div class="menu-icon"><span></span> <span></span> <span></span> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="texto">
-                <h2>Hola a todos, esta es mi web.</h2>
-            </div>
-                <img id="background" src="./img/laptop.jpg" alt="laptop on a white desk by rawpixel on Unsplash">
-        </div>
-        <div class="row">
-                <div class="column"> 
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="./img/responsive.png" alt="flat responsive devices">
-                        <div class="overlay">
-                            <p class="icon-links">
-                                <a href="https://victorsnz.github.io/ResponsiveWebExample">
-                                    <span>Página de ejemplo con bootstrap</span>
-                                </a>
-                            </p>
+    <body>
+        <header>
+            <h1>Muro de proyectos</h1>
+        </header>
+        <main class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/400/250" class="card-img-top" alt="sample image">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="column"> 
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="./img/RPS.PNG" alt="rock paper scissor">
-                        <div class="overlay">
-                            <p class="icon-links">
-                                <a href="https://victorsnz.github.io/rock-paper-scissor">
-                                    <span>Piedra Papel Tijeras</span>
-                                </a>
-                            </p>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/400/250" class="card-img-top" alt="sample image">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="column"> 
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="http://placehold.it/450x300" alt="">
-                            <div class="overlay">
-                                <p class="icon-links">
-                                    <a href="#">
-                                        <span>Ejemplo</span>
-                                    </a>
-                                </p>
-                            </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/400/250" class="card-img-top" alt="sample image">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
+                    </div>
                 </div>
-                <div class="column"> 
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="http://placehold.it/450x300" alt="">
-                            <div class="overlay">
-                                <p class="icon-links">
-                                    <a href="#">
-                                        <span>Ejemplo</span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                </div>
-                <div class="column"> 
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="http://placehold.it/450x300" alt="">
-                            <div class="overlay">
-                                <p class="icon-links">
-                                    <a href="#">
-                                        <span>Ejemplo</span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                </div>
-                <div class="column"> 
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="http://placehold.it/450x300" alt="">
-                            <div class="overlay">
-                                <p class="icon-links">
-                                    <a href="#">
-                                        <span>LALALA</span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                </div>
-    </div> <!-- row -->
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <br>
-                <h2>Aviso</h2>
             </div>
-            <div class="modal-body">
-                <br>
-                <p class="modal-text">En este momento estoy trabajando en la construcción de mi nuevo sitio.</p>
-                <p class="modal-text">Podes revisar éste de todas formas :D</p>
-                <br>
-            </div>
-            <div class="modal-footer">
-            <h3>Modal Footer</h3>
-        </div>
-    </div>
-    <!------------------------- -->
-    </div>
-    </div>
-    <div id="container-floating">
-        <div class="tooltip" style="margin-left: 30%">
-            <img class="avatar" src="./img/avatar.png" alt="Vic" style ="margin-top: 18px">
-            <span class="tooltiptext" style="margin-left: 70px" >Nunca llegué a terminar este sitio 😅</span>
-        </div>
-    </div>
-    <div class="footer">
-        <div id="footer-legend">Hecho por Victor Sanchez</div>
-        <div id="footer-social">
-            <a href="https://www.facebook.com/VictorAdolfoSanchez" target="_blank"><i class="fa fa-facebook"></i></a>                       
-            <a href="https://www.instagram.com/victorsnz" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/VictorSNZ89" target="_blank"><i class="fa fa-twitter"></i></a>
-        </div>
-    </div>
-    <script src="./app.js"></script>
-</body>
+        </main>
+        <footer>
+            <p>Made with &#129481; by <a href="http://www.victorsnz.web.app">Victor Sanchez</a></p>
+        </footer>
+    </body>
 </html>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script>
     $('.menu-icon').click(function(){
         $('.nav-bar').toggleClass('visible');
     });
-</script>
+</script> -->
