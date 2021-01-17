@@ -30,6 +30,10 @@ main {
   min-height: 75vh;
 }
 
+.clickable-item {
+  text-decoration: none;
+}
+
 .card {
   width: 350px;
   border-style: solid;
@@ -38,18 +42,37 @@ main {
   border-radius: 0px;
   box-shadow: 10px 6px 6px -1px rgb(51, 68, 68);
 }
+.card-text {
+  font-weight: 400;
+  color: #242425;
+}
 
-.plant {
-  height: 250px;
+.card:hover,
+.octocat:hover {
+  transition: all 300ms ease;
+   -webkit-transform: scale(1..05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.octocat {
+  height: 180px;
+  margin-top: 72px;
   margin-left: 50px;
-  margin-top: 5px;
   margin-bottom: 0px;
 }
 
 .clock {
   height: 160px;
-  margin-left: 240px;
   margin-top: 90px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+}
+
+.plant {
+  height: 250px;
+  margin-top: 5px;
+  margin-left: 50px;
   margin-bottom: 0px;
 }
 
@@ -60,9 +83,6 @@ main {
  }
 
 footer {
-  /* width: 100%; */
-    /* display: flex;
-  align-content: center; */
   bottom: 0;
   z-index: 0 !important;
   background: url('./img/shelf.png') no-repeat scroll left;
@@ -82,7 +102,9 @@ footer {
 }
 
 @media screen and (max-width: 770px) {
-  .clock {
+  .clock, 
+  .plant {
     display: none;
   }
+  
 }
