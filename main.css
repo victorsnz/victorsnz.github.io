@@ -12,6 +12,17 @@ body {
   background-size: cover;
 }
 
+/* //// Custom Scrollbar //// */
+/* width */
+::-webkit-scrollbar { width: 15px; }
+/* Track */
+::-webkit-scrollbar-track { background: #f1f1f1; }
+/* Handle */
+::-webkit-scrollbar-thumb { background: teal; }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { background: lightseagreen; }
+/*//////////////////////////////////*/
+
 header {
   height: 160px;
 }
@@ -82,6 +93,11 @@ main {
 
  }
 
+.matecito {
+  width: 16px;
+  margin-bottom: 5px;
+}
+
 footer {
   bottom: 0;
   z-index: 0 !important;
@@ -93,12 +109,18 @@ footer {
   width: 100%;
   text-align: center;
   font-weight: 500;
-  color: #242425;
+  color: whitesmoke;
 }
-.footer-legend > a {
+
+.footer-legend > span {
+  padding: 2px 6px;
+  background-color: #0a0a0a;
+}
+
+.footer-legend > span > a {
   text-decoration: none;
   font-weight: 600;
-  color: #242425;
+  color: whitesmoke;
 }
 
 @media screen and (max-width: 770px) {
